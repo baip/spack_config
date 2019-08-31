@@ -1,0 +1,33 @@
+packages:
+  binutils:
+    paths:
+      binutils@2.28: /panfs/roc/msisoft/binutils/2.28_gcc6.3.0
+    buildable: False
+  cmake:
+    paths:
+      cmake@3.9.3: /panfs/roc/msisoft/cmake/3.9.3
+    buildable: False
+  elpa:
+    version: [2016.05.004]
+  intel-mpi:
+    paths:
+      intel-mpi@2016.223: /panfs/roc/intel/x86_64/2016/impi_msi
+      intel-mpi@2017.4.196: /panfs/roc/intel/x86_64/2017/impi_msi
+      intel-mpi@2018.0.128: /panfs/roc/intel/x86_64/2018/impi_msi
+    buildable: False
+  openssl:
+    paths:
+      openssl@1.0.1e: /usr
+    buildable: False
+  perl:
+    paths:
+      perl@5.10.1: /usr
+    buildable: False
+  all:
+    compiler: [gcc@7.2.0, intel@2018.0.128.7.2.0]
+    providers:
+      mkl: [intel-mkl]
+      mpi: [intel-mpi]
+      blas: [intel-mkl]
+      lapack: [intel-mkl]
+      scalapack: [intel-mkl]

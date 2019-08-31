@@ -1,0 +1,83 @@
+compilers:
+- compiler:
+    modules: [binutils/2.28, gcc-6.4.0-gcc-4.4.7-bx5dbff]
+    operating_system: centos6
+    paths:
+      cc: /panfs/roc/groups/1/neurockm/shared/tools/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-6.4.0-bx5dbffh53szzxnwzg6j44mh4er3yh2i/bin/gcc
+      cxx: /panfs/roc/groups/1/neurockm/shared/tools/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-6.4.0-bx5dbffh53szzxnwzg6j44mh4er3yh2i/bin/g++
+      f77: /panfs/roc/groups/1/neurockm/shared/tools/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-6.4.0-bx5dbffh53szzxnwzg6j44mh4er3yh2i/bin/gfortran
+      fc: /panfs/roc/groups/1/neurockm/shared/tools/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-6.4.0-bx5dbffh53szzxnwzg6j44mh4er3yh2i/bin/gfortran
+    spec: gcc@6.4.0.default
+- compiler:
+    modules: [binutils/2.28, gcc/7.2.0]
+    operating_system: centos6
+    paths:
+      cc: /panfs/roc/msisoft/gcc/7.2.0/bin/gcc
+      cxx: /panfs/roc/msisoft/gcc/7.2.0/bin/g++
+      f77: /panfs/roc/msisoft/gcc/7.2.0/bin/gfortran
+      fc: /panfs/roc/msisoft/gcc/7.2.0/bin/gfortran
+    flags:
+      cflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      cxxflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      cppflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      fflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      f90flags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+    spec: gcc@7.2.0
+- compiler:
+    modules: [binutils/2.28, gcc/7.2.0]
+    operating_system: centos6
+    paths:
+      cc: /panfs/roc/msisoft/gcc/7.2.0/bin/gcc
+      cxx: /panfs/roc/msisoft/gcc/7.2.0/bin/g++
+      f77: /panfs/roc/msisoft/gcc/7.2.0/bin/gfortran
+      fc: /panfs/roc/msisoft/gcc/7.2.0/bin/gfortran
+    flags:
+      cflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      cxxflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      cppflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      fflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      f90flags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+    spec: gcc@7.2.0.itasca
+- compiler:
+    modules: [binutils/2.28, gcc/7.2.0]
+    operating_system: centos6
+    paths:
+      cc: /panfs/roc/msisoft/gcc/7.2.0/bin/gcc
+      cxx: /panfs/roc/msisoft/gcc/7.2.0/bin/g++
+      f77: /panfs/roc/msisoft/gcc/7.2.0/bin/gfortran
+      fc: /panfs/roc/msisoft/gcc/7.2.0/bin/gfortran
+    flags:
+      cflags: -O3 -mtune=sandybridge -march=sandybridge -funroll-loops -fPIC
+      cxxflags: -O3 -mtune=sandybridge -march=sandybridge -funroll-loops -fPIC
+      cppflags: -O3 -mtune=sandybridge -march=sandybridge -funroll-loops -fPIC
+      fflags: -O3 -mtune=sandybridge -march=sandybridge -funroll-loops -fPIC
+      f90flags: -O3 -mtune=sandybridge -march=sandybridge -funroll-loops -fPIC
+    spec: gcc@7.2.0.sb
+- compiler:
+    modules: [binutils/2.28, gcc/6.1.0, intel/2017/update4]
+    operating_system: centos6
+    paths:
+      cc: /panfs/roc/intel/x86_64/2017/parallel_studio_xe_msi/compilers_and_libraries_2017.4.196/linux/bin/intel64/icc
+      cxx: /panfs/roc/intel/x86_64/2017/parallel_studio_xe_msi/compilers_and_libraries_2017.4.196/linux/bin/intel64/icpc
+      f77: /panfs/roc/intel/x86_64/2017/parallel_studio_xe_msi/compilers_and_libraries_2017.4.196/linux/bin/intel64/ifort
+      fc: /panfs/roc/intel/x86_64/2017/parallel_studio_xe_msi/compilers_and_libraries_2017.4.196/linux/bin/intel64/ifort
+    flags:
+      cflags: -O3 -xHost -fPIC
+      cxxflags: -O3 -xHost -fPIC
+      fflags: -O3 -xHost -fPIC
+      f90flags: -O3 -xHost -fPIC
+    spec: intel@2017.4.196
+- compiler:
+    modules: [] #binutils/2.28, gcc/7.2.0, intel/2018/release]
+    operating_system: centos6
+    paths:
+      cc: /panfs/roc/intel/x86_64/2018/parallel_studio_xe_msi/compilers_and_libraries_2018.0.128/linux/bin/intel64/icc
+      cxx: /panfs/roc/intel/x86_64/2018/parallel_studio_xe_msi/compilers_and_libraries_2018.0.128/linux/bin/intel64/icpc
+      f77: /panfs/roc/intel/x86_64/2018/parallel_studio_xe_msi/compilers_and_libraries_2018.0.128/linux/bin/intel64/ifort
+      fc: /panfs/roc/intel/x86_64/2018/parallel_studio_xe_msi/compilers_and_libraries_2018.0.128/linux/bin/intel64/ifort
+    flags:
+      cflags: -O3 -xHost -fPIC
+      cxxflags: -O3 -xHost -fPIC
+      fflags: -O3 -xHost -fPIC
+      f90flags: -O3 -xHost -fPIC
+    spec: intel@2018.0.128.7.2.0

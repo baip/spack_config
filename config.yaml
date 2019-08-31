@@ -1,0 +1,4 @@
+#config:
+#  build_jobs: 1
+#  dirty: true
+#  verify_ssl: false
