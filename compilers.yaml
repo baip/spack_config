@@ -1,0 +1,91 @@
+compilers:
+- compiler:
+    modules:
+    - PrgEnv-gnu
+    - gcc/6.3.0
+    operating_system: CNL
+    paths:
+      cc: cc
+      cxx: CC
+      f77: ftn
+      fc: ftn
+    target: any
+    flags:
+      cflags: -O3 -mtune=haswell -march=haswell -funroll-loops -fPIC
+      cxxflags: -O3 -mtune=haswell -march=haswell -funroll-loops -fPIC
+      cppflags: -O3 -mtune=haswell -march=haswell -funroll-loops -fPIC
+      fflags: -O3 -mtune=haswell -march=haswell -funroll-loops -fPIC
+      f90flags: -O3 -mtune=haswell -march=haswell -funroll-loops -fPIC
+    spec: gcc@6.3.0.cori
+- compiler:
+    modules:
+    - PrgEnv-gnu
+    - gcc/6.3.0
+    operating_system: CNL
+    paths:
+      cc: cc
+      cxx: CC
+      f77: ftn
+      fc: ftn
+    target: any
+    flags:
+      cflags: -O3 -mtune=knl -march=knl -funroll-loops -fPIC
+      cxxflags: -O3 -mtune=knl -march=knl -funroll-loops -fPIC
+      cppflags: -O3 -mtune=knl -march=knl -funroll-loops -fPIC
+      fflags: -O3 -mtune=knl -march=knl -funroll-loops -fPIC
+      f90flags: -O3 -mtune=knl -march=knl -funroll-loops -fPIC
+    spec: gcc@6.3.0.knl
+- compiler:
+    modules:
+    - PrgEnv-gnu
+    - gcc/6.3.0
+    operating_system: CNL
+    paths:
+      cc: cc
+      cxx: CC
+      f77: ftn
+      fc: ftn
+    target: any
+    flags:
+      cflags: -O3 -mtune=ivybridge -march=ivybridge -funroll-loops -fPIC
+      cxxflags: -O3 -mtune=ivybridge -march=ivybridge -funroll-loops -fPIC
+      cppflags: -O3 -mtune=ivybridge -march=ivybridge -funroll-loops -fPIC
+      fflags: -O3 -mtune=ivybridge -march=ivybridge -funroll-loops -fPIC
+      f90flags: -O3 -mtune=ivybridge -march=ivybridge -funroll-loops -fPIC
+    spec: gcc@6.3.0.edison
+- compiler:
+    modules:
+    - PrgEnv-intel
+    - intel/18.0.0.128
+    operating_system: CNL
+    paths:
+      cc: cc
+      cxx: CC
+      f77: ftn
+      fc: ftn
+    target: any
+    flags:
+      cflags: -O3 -mtune=haswell -march=haswell -fPIC
+      cxxflags: -O3 -mtune=haswell -march=haswell -fPIC
+      cppflags: -O3 -mtune=haswell -march=haswell -fPIC
+      fflags: -O3 -mtune=haswell -march=haswell -fPIC
+      f90flags: -O3 -mtune=haswell -march=haswell -fPIC
+    spec: intel@2018.0.0.128.cori
+- compiler:
+    modules:
+    - PrgEnv-intel
+    - intel/18.0.0.128
+    operating_system: CNL
+    paths:
+      cc: cc
+      cxx: CC
+      f77: ftn
+      fc: ftn
+    target: any
+    flags:
+      cflags: -O3 -mtune=ivybridge -march=ivybridge -fPIC
+      cxxflags: -O3 -mtune=ivybridge -march=ivybridge -fPIC
+      cppflags: -O3 -mtune=ivybridge -march=ivybridge -fPIC
+      fflags: -O3 -mtune=ivybridge -march=ivybridge -fPIC
+      f90flags: -O3 -mtune=ivybridge -march=ivybridge -fPIC
+    spec: intel@2018.0.0.128.edison
