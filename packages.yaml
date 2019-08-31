@@ -1,0 +1,23 @@
+packages:
+  cmake:
+    paths:
+      cmake@3.9.4: /share/apps/cmake-3.9.4
+    buildable: False
+  elpa:
+    version: [2016.05.004]
+  openssl:
+    paths:
+      openssl@1.0.2j: /usr
+    buildable: False
+  perl:
+    paths:
+      perl@5.10.1: /usr
+    buildable: False
+  all:
+    compiler: [gcc@6.4.0, intel@2018.0.128.6.4.0]
+    providers:
+      mkl: [intel-mkl]
+      mpi: [intel-mpi]
+      blas: [intel-mkl]
+      lapack: [intel-mkl]
+      scalapack: [intel-mkl]

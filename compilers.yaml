@@ -1,0 +1,83 @@
+compilers:
+- compiler:
+    flags:
+      cflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      cxxflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      cppflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      fflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      f90flags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+    modules: [binutils-2.28-gcc-4.4.7-oh67qvy, gcc-5.5.0-gcc-4.4.7-nakbunl]
+    operating_system: centos6
+    paths:
+      cc: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-5.5.0-nakbunlics2rl55lsxapsimkmz5o2uup/bin/gcc
+      cxx: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-5.5.0-nakbunlics2rl55lsxapsimkmz5o2uup/bin/g++
+      f77: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-5.5.0-nakbunlics2rl55lsxapsimkmz5o2uup/bin/gfortran
+      fc: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-5.5.0-nakbunlics2rl55lsxapsimkmz5o2uup/bin/gfortran
+    spec: gcc@5.5.0
+- compiler:
+    flags:
+      cflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      cxxflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      cppflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      fflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      f90flags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+    modules: [binutils-2.28-gcc-4.4.7-oh67qvy, gcc-6.4.0-gcc-4.4.7-bx5dbff]
+    operating_system: centos6
+    paths:
+      cc: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-6.4.0-bx5dbffh53szzxnwzg6j44mh4er3yh2i/bin/gcc
+      cxx: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-6.4.0-bx5dbffh53szzxnwzg6j44mh4er3yh2i/bin/g++
+      f77: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-6.4.0-bx5dbffh53szzxnwzg6j44mh4er3yh2i/bin/gfortran
+      fc: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-6.4.0-bx5dbffh53szzxnwzg6j44mh4er3yh2i/bin/gfortran
+    spec: gcc@6.4.0
+- compiler:
+    modules: [binutils-2.28-gcc-4.4.7-oh67qvy, gcc-6.4.0-gcc-4.4.7-bx5dbff]
+    operating_system: centos6
+    paths:
+      cc: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-6.4.0-bx5dbffh53szzxnwzg6j44mh4er3yh2i/bin/gcc
+      cxx: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-6.4.0-bx5dbffh53szzxnwzg6j44mh4er3yh2i/bin/g++
+      f77: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-6.4.0-bx5dbffh53szzxnwzg6j44mh4er3yh2i/bin/gfortran
+      fc: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-6.4.0-bx5dbffh53szzxnwzg6j44mh4er3yh2i/bin/gfortran
+    spec: gcc@6.4.0.default
+- compiler:
+    flags:
+      cflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      cxxflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      cppflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      fflags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+      f90flags: -O3 -mtune=native -march=native -funroll-loops -fPIC
+    modules: [binutils-2.28-gcc-4.4.7-oh67qvy, gcc-7.2.0-gcc-4.4.7-d3wacuq]
+    operating_system: centos6
+    paths:
+      cc: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-7.2.0-d3wacuqrhhxbfkvpjbehjtkvksmm5kf2/bin/gcc
+      cxx: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-7.2.0-d3wacuqrhhxbfkvpjbehjtkvksmm5kf2/bin/g++
+      f77: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-7.2.0-d3wacuqrhhxbfkvpjbehjtkvksmm5kf2/bin/gfortran
+      fc: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-4.4.7/gcc-7.2.0-d3wacuqrhhxbfkvpjbehjtkvksmm5kf2/bin/gfortran
+    spec: gcc@7.2.0
+- compiler:
+    modules: [binutils/2.27, gmp/6.1.1, mpc/1.0.3, mpfr/3.1.4, gcc/6.2.0, intel/2017.4.196]
+    operating_system: centos6
+    paths:
+      cc: /share/apps/intel/parallel_studio_xe_2017.4.196/compilers_and_libraries_2017.4.196/linux/bin/intel64/icc
+      cxx: /share/apps/intel/parallel_studio_xe_2017.4.196/compilers_and_libraries_2017.4.196/linux/bin/intel64/icpc
+      f77: /share/apps/intel/parallel_studio_xe_2017.4.196/compilers_and_libraries_2017.4.196/linux/bin/intel64/ifort
+      fc: /share/apps/intel/parallel_studio_xe_2017.4.196/compilers_and_libraries_2017.4.196/linux/bin/intel64/ifort
+    flags:
+      cflags: -O3 -xHost -fPIC
+      cxxflags: -O3 -xHost -fPIC
+      fflags: -O3 -xHost -fPIC
+      f90flags: -O3 -xHost -fPIC
+    spec: intel@2017.4.196.6.2.0
+- compiler:
+    flags:
+      cflags: -O3 -xHost -fPIC
+      cxxflags: -O3 -xHost -fPIC
+      fflags: -O3 -xHost -fPIC
+      f90flags: -O3 -xHost -fPIC
+    modules: [] #binutils-2.28-gcc-4.4.7-oh67qvy, gcc-6.4.0-gcc-4.4.7-bx5dbff, intel-parallel-studio-professional.2018.0-gcc-6.4.0-cuv5nrw]
+    operating_system: centos6
+    paths:
+      cc: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-6.4.0/intel-parallel-studio-professional.2018.0-cuv5nrwzbxbrcuo5bid5akumubnbwp3p/compilers_and_libraries_2018.0.128/linux/bin/intel64/icc
+      cxx: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-6.4.0/intel-parallel-studio-professional.2018.0-cuv5nrwzbxbrcuo5bid5akumubnbwp3p/compilers_and_libraries_2018.0.128/linux/bin/intel64/icpc
+      f77: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-6.4.0/intel-parallel-studio-professional.2018.0-cuv5nrwzbxbrcuo5bid5akumubnbwp3p/compilers_and_libraries_2018.0.128/linux/bin/intel64/ifort
+      fc: /share/apps/spack/opt/spack/linux-centos6-x86_64/gcc-6.4.0/intel-parallel-studio-professional.2018.0-cuv5nrwzbxbrcuo5bid5akumubnbwp3p/compilers_and_libraries_2018.0.128/linux/bin/intel64/ifort
+    spec: intel@2018.0.128.6.4.0
