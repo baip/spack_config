@@ -1,0 +1,35 @@
+packages:
+  cmake:
+    paths:
+      cmake@3.9.1: /opt/cmake
+    buildable: False
+  elpa:
+    version: [2016.05.004]
+  intel-mpi:
+    paths:
+      intel-mpi@2016.3.210: /opt/intel/2016.3.210/compilers_and_libraries/linux/mpi/intel64
+    buildable: False
+  mvapich2:
+    paths:
+      mvapich2@2.1: /opt/mvapich2/intel/ib
+    buildable: False
+  openmpi:
+    paths:
+      openmpi@1.8.4: /opt/openmpi/gnu/ib
+    buildable: False
+  openssl:
+    paths:
+      openssl@1.0.1e: /usr
+    buildable: False
+  perl:
+    paths:
+      perl@5.10.1: /usr
+    buildable: False
+  all:
+    compiler: [gcc@7.2.0, intel@2018.0.128.7.2.0]
+    providers:
+      mkl: [intel-mkl]
+      mpi: [intel-mpi]
+      blas: [intel-mkl]
+      lapack: [intel-mkl]
+      scalapack: [intel-mkl]
